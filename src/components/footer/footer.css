@@ -1,0 +1,51 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* To remove any other styling from the links */
+:root {
+  --primary-color: #f05454;
+
+  --secondary-color: #222831;
+  --dark-color: #30475e;
+  --light-color: #fff;
+
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+.footerContainer {
+  height: 100px;
+  width: 100%;
+  margin-top: 830px;
+  background-color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.copyrightText {
+  position: absolute;
+  width: 50%;
+  height: auto;
+}
+
+.copyrightText p {
+  color: var(--light-color);
+  padding: 30px;
+}
+
+@media (max-width: 852px) {
+  .footerContainer {
+    margin-top: 1900px;
+    height: 150px;
+  }
+  .copyrightText {
+    width: 100%;
+  }
+  .copyrightText p {
+    margin-top: 20px;
+    color: var(--light-color);
+    padding: 30px;
+  }
+}

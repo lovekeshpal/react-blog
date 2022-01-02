@@ -1,0 +1,103 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* To remove any other styling from the links */
+:root {
+  --primary-color: #f05454;
+
+  --secondary-color: #222831;
+  --dark-color: #30475e;
+  --light-color: #fff;
+
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+.heroContainer {
+  height: 80vh;
+}
+
+.heroHead {
+  margin: 20px;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.featureOne {
+  /* border: 1px solid black; */
+  display: grid;
+}
+.featureOne > img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  object-fit: cover;
+}
+/* .featureTwo {
+  border: 1px solid black;
+} */
+.featureTwo > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.featureAddOne {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1.5fr;
+}
+
+.featureAddTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 2fr;
+}
+
+@media (max-width: 952px) {
+  .heroContainer {
+    height: auto;
+
+  }
+}
+
+@media (max-width: 858px) {
+  .heroContainer {
+    height: auto;
+  
+  }
+
+  .heroHead {
+ 
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .featureOne {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .featureAddOne {
+    display: grid;
+    height: 100%;
+
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /* .featureTwo {
+    border: 1px solid black;
+  } */
+  .featureAddTwo {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-rows: 1fr;
+  }
+}
